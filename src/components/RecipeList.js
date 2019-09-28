@@ -3,14 +3,15 @@ import RecipeItem from './RecipeItem';
 
 const RecipeList = ({ recipes }) => {
     const renderedList = recipes.map((recipe) => {
-        // console.log(recipe.recipe.label);
-        // return <div>{recipe.recipe.label}</div>
         return <RecipeItem recipe={recipe} />;
     });
 
     return (
-        <div>{renderedList}</div>
-        // <div>Recipe list</div>
+        <div className="ui grid">
+            <div className="ui row">
+                {renderedList}
+            </div>
+        </div>
     );
 };
 

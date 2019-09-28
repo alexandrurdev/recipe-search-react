@@ -25,7 +25,6 @@ class App extends React.Component {
 
 
         this.setState({ recipes: res.data.hits });
-        // console.log(this.state.recipes);
     };
 
     render() {
